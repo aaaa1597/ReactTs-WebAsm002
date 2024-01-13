@@ -4,11 +4,11 @@ import { helloif } from './asm-cpp/helloif';
 
 function App() {
   const [count, setCount] = useState(0)
-  console.log('---------------- asmret=', helloif(11, 22, setCount))
 
   return (
     <div className="App">
       hello world!!
+      <button onClick={() => helloif(11, 22, setCount)}> Click {count} times</button>
       <div>count= {count}</div>
   </div>
   );
